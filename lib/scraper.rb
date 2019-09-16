@@ -36,5 +36,3 @@ class Scraper
   end
 
 end
-
-#twitter, linkedin, github, blog, profilequote, bio
