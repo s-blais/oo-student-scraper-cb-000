@@ -28,7 +28,8 @@ class Scraper
       elsif a.attribute("href").value.include? ("github")
         scraped_attributes[:github] = a.attribute("href").value
       end
-
+      scraped_attributes[:profile_quote] = doc.css(".profile-quote").text
+      scraped_attributes[:bio] = doc.css(".bio-block p").text
     end
     scraped_attributes
   end
