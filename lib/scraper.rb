@@ -12,7 +12,7 @@ class Scraper
     doc.css(".student-card").each do |card|
       name = card.css(".student-name").text
       location = card.css(".student-location").text
-      profile_url => card.css("a").attribute("href").value
+      profile_url = card.css("a").attribute("href").value
       scraped_students << {name: name, location: location, profile_url: profile_url}
     end
   end
