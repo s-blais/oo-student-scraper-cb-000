@@ -30,7 +30,7 @@ class Scraper
       end
 
     end
-    binding.pry
+    scraped_attributes
   end
 
 end
