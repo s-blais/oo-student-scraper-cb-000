@@ -3,8 +3,6 @@ require 'pry'
 
 class Scraper
 
-
-
   def self.scrape_index_page(index_url)
     students_array = []
     doc = Nokogiri::HTML(open(index_url))
