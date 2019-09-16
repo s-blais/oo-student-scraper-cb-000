@@ -15,6 +15,7 @@ class Scraper
       profile_url = card.css("a").attribute("href").value
       scraped_students << {name: name, location: location, profile_url: profile_url}
     end
+    scraped_students
   end
 
   def self.scrape_profile_page(profile_url)
