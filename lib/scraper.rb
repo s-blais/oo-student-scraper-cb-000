@@ -29,7 +29,7 @@ class Scraper
         scraped_attributes[github] = a.attribute("href").value
       end
       binding.pry
-    end  
+    end
   end
 
 end
