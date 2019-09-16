@@ -27,6 +27,7 @@ class Scraper
         scraped_attributes[:linkedin] = a.attribute("href").value
       elsif a.attribute("href").value.include? ("github")
         scraped_attributes[:github] = a.attribute("href").value
+      else scraped_attributes[:blog] = a.attribute("href").value
       end
       scraped_attributes[:profile_quote] = doc.css(".profile-quote").text
       scraped_attributes[:bio] = doc.css(".bio-block p").text
