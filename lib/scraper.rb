@@ -28,8 +28,9 @@ class Scraper
       elsif a.attribute("href").value.include? ("github")
         scraped_attributes[:github] = a.attribute("href").value
       end
-      binding.pry
+      
     end
+    binding.pry
   end
 
 end
